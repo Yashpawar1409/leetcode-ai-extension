@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LeetCode Gemini Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LeetCode Assistant</h1>
+      <div class="api-key-container">
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+        <button id="saveKey">Save</button>
+      </div>
+    </div>
+    
+    <div id="problemInfo">
+      <h3 id="problemTitle">No problem detected</h3>
+      <p id="problemDifficulty"></p>
+    </div>
+    
+    <div id="chatContainer">
+      <div id="chatMessages"></div>
+      <div class="input-area">
+        <textarea id="userInput" placeholder="Ask for hints, solutions, or explanations..."></textarea>
+        <button id="sendButton">Send</button>
+      </div>
+      <div class="quick-actions">
+        <button class="quick-btn" data-prompt="Give me a hint">Hint</button>
+        <button class="quick-btn" data-prompt="Explain the approach">Approach</button>
+        <button class="quick-btn" data-prompt="Show me the solution">Solution</button>
+      </div>
+    </div>
+    
+    <div id="loading" class="loading-container">
+      <p>Thinking...</p>
+    </div>
+  </div>
+</body>
+</html>
